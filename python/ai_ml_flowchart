@@ -1,0 +1,21 @@
+digraph {
+	nodesep=0.6 rankdir=TB ranksep=0.8 size=8 splines=true
+	node [fillcolor="#E6E6FA" fontname=Arial fontsize=12 shape=box style="rounded, filled"]
+	A [label="User Input Data
+(e.g., travel preferences, text, images)"]
+	B [label="Data Preprocessing & Feature Engineering
+(Cleaning & preparing data)"]
+	C [label="AI Model Selection & Training
+(Choosing the best ML model)"]
+	D [label="Model Evaluation & Optimization
+(Improving accuracy & efficiency)"]
+	E [label="Real-time Adaptability & Feedback
+(Adjusting based on new data)"]
+	F [label="Final Decision & Output Generation
+(AI-driven recommendations)"]
+	A -> B [label="Data Collection"]
+	B -> C [label="Feature Selection & Transformation"]
+	C -> D [label="Training & Testing"]
+	D -> E [label="Fine-tuning & Feedback Integration"]
+	E -> F [label="Final AI Decision"]
+}
