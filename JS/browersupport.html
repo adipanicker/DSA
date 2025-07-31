@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>DATE TIME SUPPORT CHECKER</title>
+    Date Time support checker
+  </head>
+  <body>
+    <form id="thisform"></form>
+    <script>
+      var datepicker = document.createElement("input");
+      var formelement = document.getElementById("thisform");
+      datepicker.setAttribute("type", "date");
+      formelement.appendChild(datepicker);
+      if (datepicker.type == "text") {
+        alert("Date input is not supported");
+      }
+    </script>
+  </body>
+</html>

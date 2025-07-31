@@ -27,7 +27,7 @@ void printNos(int n) {
     cout << i << " ";
     i--;
     if (i=0){
-        return;       
+        return;
         }
     
     else {
