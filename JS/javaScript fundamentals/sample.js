@@ -1,18 +1,23 @@
-var globalVar = "I'm a global variable";
-const globalConst = "I'm a global constant";
-let globalLet = "Im a global, but scoped with let";
+var userRole = "admin";
+var access;
+let isLoggedIn = true;
+let userMessage;
 
-{
-  var blockVar = "I'm a block-scoped var";
-  let blockLet = "I'm a block-scoped let";
-  const blockConst = "I'm a block-scoped const";
+//while using ternary operators try not to console.log or do any function
+//rather assign the value to a variable first
 
-  //Block Scope
-  console.log(blockVar);
-  console.log(blockLet);
+if (isLoggedIn) {
+  console.log("Welcome back!");
+  if (userRole == "admin") {
+    userMessage = "Welcome, admin!";
+    access = "Access status: Full access granted";
+  } else {
+    userMessage = "Welcome, user!";
+    access = "Access status: Partial access only";
+  }
+} else {
+  console.log("Please log in to continue");
 }
 
-// Global scope
-console.log(globalVar); // Output: "I'm a global variable"
-console.log(globalLet); // Output: "I'm also global, but scoped with let"
-console.log(globalConst); // Output: "I'm a global constant"
+console.log("User Message:", userMessage);
+console.log(access);
