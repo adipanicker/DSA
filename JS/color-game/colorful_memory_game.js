@@ -40,6 +40,7 @@ function shuffle(array) {
   }
   return array;
 }
+
 function handleCardClick(event) {
   const card = event.target;
   if (!card.classList.contains("card") || card.classList.contains("matched")) {
@@ -52,6 +53,7 @@ function handleCardClick(event) {
     setTimeout(checkMatch, 500);
   }
 }
+
 function checkMatch() {
   const [card1, card2] = selectedCards;
   if (card1.dataset.color === card2.dataset.color) {
@@ -62,15 +64,16 @@ function checkMatch() {
   } else {
     card1.textContent = "?";
     card2.textContent = "?";
-    card1.style.backgroundColor = "#ddd";
-    card2.style.backgroundColor = "#ddd";
+    card1.style.backgroundColor = "#add";
+    card2.style.backgroundColor = "#add";
   }
   selectedCards = [];
 }
+
 function startGame() {
   let timeLeft = 30;
   startbtn.disabled = true;
-  score = 0; // Reset score to zero
+  score = 0;
   scoreElement.textContent = `Score: ${score}`;
   startGameTimer(timeLeft);
   cards = shuffle(colors.concat(colors));
@@ -79,6 +82,7 @@ function startGame() {
   generateCards();
   gameContainer.addEventListener("click", handleCardClick);
 }
+
 function startGameTimer(timeLeft) {
   timerElement.textContent = `Time Left: ${timeLeft}`;
   gameInterval = setInterval(() => {
