@@ -1,8 +1,8 @@
 function showweatherDetails(event) {
   event.preventDefault();
   const city = document.getElementById("city").value;
-  const apiKey = "78e915f80017c93f8aafbac43023e505"; // Replace 'YOUR_API_KEY' with your actual API key
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=78e915f80017c93f8aafbac43023e505&units=metric`;
+  const apiKey = "API_KEY"; // Replace 'YOUR_API_KEY' with your actual API key
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=API_KEY&units=metric`;
 
   fetch(apiUrl)
     .then((response) => {
