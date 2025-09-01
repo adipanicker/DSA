@@ -51,7 +51,7 @@ int main(){
     Node* temp = newHead;
     while (temp){
         cout << temp->data << " " ;
-        cout << "CRAZYY";
+        cout << "CRAZYYyy";
         temp=temp->next;
     }
 }
