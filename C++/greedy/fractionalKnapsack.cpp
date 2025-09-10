@@ -33,5 +33,5 @@ int main(){
     vector<pair<int,int>> knapsack = {{100,20},{60,10},{100,50},{200,50}};
     int maxWeight = 90;
     int ans = FractionalKnapsack(knapsack,maxWeight);
-    cout << "The answer is " << ans;
+    cout << "The answer is: " << ans;
 }
