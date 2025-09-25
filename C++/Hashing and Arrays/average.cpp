@@ -19,7 +19,7 @@ double arrayAverage (vector<int> & arr, int n){
 
 
 int main (){
-    vector <int> arr = {3,3,3,535,322,132,233,99};
+    vector <int> arr = {3,3,3,435,322,132,233,99};
     int n = arr.size();
    double ans =  arrayAverage (arr,n);
    cout << ans;
