@@ -18,8 +18,8 @@ int main(){
     //     cout << x.first << "->" << x.second << endl; 
     // }
 
-    int q;
-    cin >> q;
+    int q=3;
+    // cin >> q;
     int num;
     while(q--){
         cin >> num;
