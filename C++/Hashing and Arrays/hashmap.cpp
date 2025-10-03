@@ -14,9 +14,9 @@ int main(){
         mpp[arr[i]]++;
     }
 
-    // for (auto x:mpp){
-    //     cout << x.first << "->" << x.second << endl; 
-    // }
+    for (auto x:mpp){
+        cout << x.first << "->" << x.second << endl; 
+    }
 
     int q;
     cin >> q;
