@@ -34,7 +34,7 @@ int main(){
     int arr[]={3,5,2,6,7,1};
     int n = sizeof(arr)/sizeof(arr[0]);
     int k;
-    cout << "Enter Number of time array to be rotated: ";
+    cout << "Enter Number of time array to be rotated pls: ";
     cin >> k;
     nleftShift(arr,n, k);
     for (int i=0;i<n;i++){
