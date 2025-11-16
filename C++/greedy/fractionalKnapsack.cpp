@@ -29,7 +29,7 @@ int FractionalKnapsack (vector<pair<int,int>> &knapsack, int maxWeight){
 }
 
 
-int main(){
+int main(){aaa
     vector<pair<int,int>> knapsack = {{100,820},{60,20},{105,50},{200,50}};
     int maxWeight = 90;
     int ans = FractionalKnapsack(knapsack,maxWeight);
